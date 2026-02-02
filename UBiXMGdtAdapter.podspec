@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMGdtAdapter'
-  s.version          = '4.15.75.0'
+  s.version          = '4.15.70.0'
   s.summary          = 'UBiX聚合广告变现SDK Gdt Adapter'
   s.homepage         = 'https://www.ubixai.com/product/md'
   # s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     'OTHER_LINK_FLAG' => '$(inherited) -ObjC' }
  
   
- s.dependency 'GDTMobSDK', '4.15.75'
+ s.dependency 'GDTMobSDK', '4.15.70'
  s.dependency 'UBiXMediationSDK'
  s.swift_version = '5.0'
 
