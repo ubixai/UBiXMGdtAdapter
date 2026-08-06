@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMGdtAdapter'
-  s.version          = '4.15.90.0'
+  s.version          = '4.16.00.0'
   s.summary          = 'UBiX聚合广告变现SDK Gdt Adapter'
   s.homepage         = 'https://www.ubixai.com/product/md'
   # s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,12 +12,11 @@ Pod::Spec.new do |s|
 
   s.static_framework = true
 
-  s.vendored_frameworks = ['UBiXMGdtAdapter/UBiXMGdtAdapter.framework']
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'OTHER_LINK_FLAG' => '$(inherited) -ObjC' }
+  s.vendored_frameworks = ['UBiXMGdtAdapter/UBiXMGdtAdapter.xcframework']
+  s.pod_target_xcconfig = { 'OTHER_LINK_FLAG' => '$(inherited) -ObjC' }
  
   
- s.dependency 'GDTMobSDK', '4.15.90'
+  s.dependency 'GDTMobSDK', '4.16.00'
  s.dependency 'UBiXMediationSDK'
  s.swift_version = '5.0'
 
